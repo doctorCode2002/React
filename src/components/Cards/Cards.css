@@ -1,0 +1,16 @@
+section, .cards-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}

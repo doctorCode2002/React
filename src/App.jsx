@@ -1,14 +1,18 @@
-import React from "react";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
+
+import Cards from "./components/Cards/Cards.jsx";
 
 const App = () => {
   return (
     <>
-      <Nav />
-      <Footer />
+      <Cards />
     </>
   );
 };
 
 export default App;
+
+// npm crate vite@latest  => will create a new folder
+// npm crate vite@latest ./   => will create the files in the current directory
+// npm run dev
+// npm run build
+// react router and route
