@@ -14,8 +14,8 @@ const Button = () => {
   //   const con = 1 == 2;
   //   return <button className="">{con && res}</button>;
 
-  const res = 0;
-  return res ? <button className="">Sucess</button> : null;  // conditional rendering
+  const res = 3;
+  return <button className="">{res ? "true" : "false"}</button>; // conditional rendering
 };
 
 export default Button;
