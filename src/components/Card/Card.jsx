@@ -23,14 +23,20 @@ const data = [
   },
 ];
 
-const Card = () => {
-  return data.map((item) => (
-    <div key={item.id} className="card">
-      <h2>{item.title}</h2>
-      <p>{item.description}</p>
-      <img src={item.image} alt={item.title} />
-    </div>
-  ));
+const Card = (props) => {
+  return (
+    <>
+      {data.map((item) => (
+        <div key={item.id} className="card">
+          <h2>{item.title}</h2>
+          <p>{item.description}</p>
+          <img src={item.image} alt={item.title} />
+        </div>
+      ))}
+
+      <div>{props.number}</div>
+    </>
+  );
 };
 
 export default Card;
